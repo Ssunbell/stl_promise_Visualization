@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
+import tensorflow
 from tensorflow.keras import models
 from tensorflow.keras import layers
 from tensorflow.keras import optimizers
