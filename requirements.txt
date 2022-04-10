@@ -18,11 +18,6 @@ streamlit==1.8.1
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow-metal==0.4.0
-termcolor==1.1.0
-terminado==0.13.3
-testpath==0.6.0
-tf-estimator-nightly==2.8.0.dev2021
 umap-learn==0.5.2
 wordcloud==1.8.1
 yaml==0.2.5
