@@ -1,11 +1,10 @@
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-import tensorflow
-from tensorflow.keras import models
-from tensorflow.keras import layers
-from tensorflow.keras import optimizers
-from tensorflow.keras import losses
+from tensorflow.python.keras import models
+from tensorflow.python.keras import layers
+from tensorflow.python.keras import optimizers
+from tensorflow.python.keras import losses
 from tensorflow import random
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
