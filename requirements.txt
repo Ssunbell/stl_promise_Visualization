@@ -18,7 +18,6 @@ streamlit==1.8.1
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow-macos==2.8.0
 tensorflow-metal==0.4.0
 termcolor==1.1.0
 terminado==0.13.3
