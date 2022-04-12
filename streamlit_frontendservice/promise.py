@@ -23,11 +23,8 @@ def call_data():
         html_string = f.read()
     with open(f"{root_path}folium.html", 'r', encoding='utf-8') as f:
         html_folium = f.read()
-    umap_image=[]
-    for number in range(2,15):
-        umap_image.append(Image.open(f'{root_path}umap/umap_{number}.png'))
-        return html_string, html_folium, umap_image
-html_string, html_folium, umap_image = call_data()
+        return html_string, html_folium,
+html_string, html_folium = call_data()
 tokens = pre.tokens
 lines_token = pre.lines_token
 promise140 = pre.promise140
@@ -183,7 +180,11 @@ elif chapter == '클러스터링':
         options=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
         value=4)
         st.markdown('> 저희의 분석 결과 최적의 군집 개수는 4 입니다.')
-        st.image(umap_image[number-2])
+        @st.experimental_memo
+        def call_umap(root_path, number):
+            umap_image = Image.open(f'{root_path}umap/umap_{number}.png')
+            return umap_image
+        st.image(call_umap(root_path, number))
 
 # 추천
 elif chapter == '후보자/공약 추천':
