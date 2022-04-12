@@ -1,0 +1,10 @@
+#!/bin/bash
+ 
+conda create -n semi_proj python=3.9
+source activate semi_proj
+conda install -c conda-forge numpy pandas scikit-learn statsmodels scipy seaborn matplotlib requests lxml beautifulsoup4 graphviz jupyter streamlit folium 
+conda install -c conda-forge nltk pyldavis pdfplumber pillow umap-learn yellowbrick jpype1
+pip install gensim wordcloud konlpy
+conda install -c apple tensorflow-deps==2.8.0
+python -m pip install tensorflow-macos==2.8.0
+python -m pip install tensorflow-metal==0.4.0
