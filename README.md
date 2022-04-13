@@ -10,7 +10,7 @@
 
 2. `env`폴더에서 윈도우 및 mac m1 운영체제에서 __가상환경__ 을 만들어 필요한 라이브러리를 다운받을 수 있도록 __배치 파일__ 을 제공합니다. 사용방법은 다음과 같습니다.
 
-### 1. 윈도우
+## 1. 윈도우 가상환경 설정 방법
 <img src="https://user-images.githubusercontent.com/97590480/163096474-fd8c39ae-2756-4e81-a3af-7c1db04d345b.png">
 
 1. `Window_virtualenvironment` 디렉토리로 들어가시면 두개 파일이 보이실텐데 그 중 __environment_Windowss.bat__ 을 실행시킵니다.
@@ -24,7 +24,7 @@
    - 맨 위에 링크는 로컬이 아닌 streamlit 서버에서 제공하는 url로 로컬에서 실행한 것과 동일합니다.
 <img width = "70%" src="https://user-images.githubusercontent.com/97590480/163096631-baf8f862-769f-4c0c-98bb-5ed86127c50d.png">
 
-### 2. m1
+## 2. m1 가상환경 설정 방법
 <img src="https://user-images.githubusercontent.com/97590480/163097020-24787a7c-8690-493a-a4f0-59a511c1bf04.png">
 
 1. `M1_virtualenvironment` 디렉토리로 들어가시면 1개의 배치파일과 `requirements.txt` 그리고 `제일먼저_이것부터_터미널에_실행해주세요.txt`가 보이실겁니다.
@@ -33,14 +33,14 @@
 
 > 맥에서는 배치 파일에 명령 권한을 부여해줘야 배치 파일이 실행됩니다. 위의 명령어는 권한을 부여하는 명령어입니다.
 
-#### 여기서 `Xcode`, `miniforge`가 깔려있은 경우와 그렇지 않은 경우로 나뉩니다.
-##### 1. `xcode`와 `miniforge`가 설치되어 있는 경우
+#### ! 여기서 `Xcode`, `miniforge`가 깔려있은 경우와 그렇지 않은 경우로 나뉩니다.
+#### 1. `xcode`와 `miniforge`가 설치되어 있는 경우
 1. 여기서 크게 `anaconda`가 깔려있는 경우와 그렇지 않은 경우로 나뉩니다.
 2. 아나콘다가 깔려있지 않은 경우에는 충돌이 일어나지 않으므로 그대로 진행해주시면 됩니다.
 3. 반면에, 아나콘다와 miniforge가 동시에 설치되어 있는 경우에는 아나콘다를 삭제해주셔야 충돌이 일어나지 않습니다.
 ###### 아나콘다가 설치되어 있지 않다면 5번으로 내려가주시기 바랍니다.
 
-##### 2. 아나콘다가 설치되어 있는 경우
+#### 2. 아나콘다가 설치되어 있는 경우
 1. 다음 명령어를 터미널에 입력해줍니다.
 ```
 sudo rm -rf anaconda
@@ -54,15 +54,16 @@ vim ~/.bash_profile
 vim ~/.zshrc
 ```
 
-##### 3. Xcode 설치
+#### 3. Xcode 설치
 - 앱 스토어에 가셔서 Xcode를 검색하여 설치해주시면 됩니다.
 
-##### 4. miniforge 설치
+#### 4. miniforge 설치
 1. miniforge가 설치되어 있지 않은 경우에 두가지 경우로 설치할 수 있습니다.
 2. `homebrew`를 이용하여 설치하는 방법은 터미널에 `brew install miniforge`을 입력하여 실행해주시면 됩니다.
 <img src="https://user-images.githubusercontent.com/97590480/163104923-8220a589-0eff-4c76-8724-12755ba8ce80.png">
 
 3. 직접 설치하는 방법은 `https://github.com/conda-forge/miniforge`로 들어가시면 위의 이미지에서 빨간색 네모칸을 다운로드 받으셔서 설치하시면 됩니다.
+> 귀찮으시다면 M1_virtualenvironment 폴더에 `Miniforge3-MacOSX-arm64.sh`를 실행시켜주시면 됩니다.
 4. brew로 설치할 경우 miniforge의 디렉토리는 homebrew에서 시작하고, 직접 설치할 경우 miniforge3의 디렉토리는 홈에서 시작합니다.
 <img src="https://user-images.githubusercontent.com/97590480/163105092-d59159d0-eaf9-4360-9201-4b832dc2972a.png">
 
@@ -70,6 +71,6 @@ vim ~/.zshrc
 
 > 설치 과정이 어렵다면 `https://velog.io/@heiswicked/M1-Lets-install-tensorflow-part01-공사중`로 들어가시면 더 상세히 설명이 되어 있습니다.
 
-##### 5. 가상환경 설치
+#### 5. 가상환경 설치
 1. 마지막으로 `virtualenvironment_m1`을 실행시켜주시면 miniforge에 `semi_proj` 가상환경을 설치하여 라이브러리를 설치합니다.
 > gensim wordcloud konlpy 라이브러리는 conda로 설치하지 않고 pip으로 설치됩니다. 따라서 해당 라이브러리가 제대로 설치되지 않을경우 따로 설치해주시기 바랍니다.
