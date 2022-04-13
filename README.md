@@ -28,12 +28,12 @@
 <img src="https://user-images.githubusercontent.com/97590480/163097020-24787a7c-8690-493a-a4f0-59a511c1bf04.png">
 
 1. `M1_virtualenvironment` 디렉토리로 들어가시면 1개의 배치파일과 `requirements.txt` 그리고 `제일먼저_이것부터_터미널에_실행해주세요.txt`가 보이실겁니다.
-2. 제일 먼저 빨간색 1번인 `제일먼저_이것부터_터미널에_실행해주세요.txt`를 여시고 해당 텍스트를 복사합니다.
+2. 제일 먼저 빨간색 1번인 `제일먼저_이것부터_터미널에_실행해주세요.txt`를 여시고 해당 텍스트를 복사하여 해당 디렉토리(여기서는 M1_virtualenvironment)에서 터미널을 여신 다음 붙여넣고 실행해주시기 바랍니다.
 <img width = "70%" src="https://user-images.githubusercontent.com/97590480/163097022-9c7c4e6d-548d-4701-a72f-468269a554ec.png">
 
 > 맥에서는 배치 파일에 명령 권한을 부여해줘야 배치 파일이 실행됩니다. 위의 명령어는 권한을 부여하는 명령어입니다.
 
-#### ! 여기서 `Xcode`, `miniforge`가 깔려있은 경우와 그렇지 않은 경우로 나뉩니다.
+#### ※ 여기서 `Xcode`, `miniforge`가 깔려있은 경우와 그렇지 않은 경우로 나뉩니다.
 #### 1. `xcode`와 `miniforge`가 설치되어 있는 경우
 1. 여기서 크게 `anaconda`가 깔려있는 경우와 그렇지 않은 경우로 나뉩니다.
 2. 아나콘다가 깔려있지 않은 경우에는 충돌이 일어나지 않으므로 그대로 진행해주시면 됩니다.
@@ -48,7 +48,7 @@ sudo rm -rf .anaconda_backup
 sudo rm -rf ~/.condarc ~/.conda ~/.continum
 sudo rm -rf ~/opt/anaconda3
 ```
-2. shell에 저장된 경로를 삭제해줘야 합니다. `<<initalized~~>>` 밑으로 전부 삭제해주시기 바랍니다.
+2. shell에 저장된 경로를 삭제해줘야 합니다. 밑의 명령어를 여시면 텍스트가 쭉 나오는데, `<<initalized~~>>` 밑으로 전부 삭제해주시기 바랍니다.
 ```
 vim ~/.bash_profile
 vim ~/.zshrc
@@ -58,16 +58,16 @@ vim ~/.zshrc
 - 앱 스토어에 가셔서 Xcode를 검색하여 설치해주시면 됩니다.
 
 #### 4. miniforge 설치
-1. miniforge가 설치되어 있지 않은 경우에 두가지 경우로 설치할 수 있습니다.
+1. miniforge가 설치되어 있지 않은 경우에 `homebrew`와 직접설치 두가지 경우로 설치할 수 있습니다.
 2. `homebrew`를 이용하여 설치하는 방법은 터미널에 `brew install miniforge`을 입력하여 실행해주시면 됩니다.
 <img src="https://user-images.githubusercontent.com/97590480/163104923-8220a589-0eff-4c76-8724-12755ba8ce80.png">
 
 3. 직접 설치하는 방법은 `https://github.com/conda-forge/miniforge`로 들어가시면 위의 이미지에서 빨간색 네모칸을 다운로드 받으셔서 설치하시면 됩니다.
 > 귀찮으시다면 M1_virtualenvironment 폴더에 `Miniforge3-MacOSX-arm64.sh`를 실행시켜주시면 됩니다.
-4. brew로 설치할 경우 miniforge의 디렉토리는 homebrew에서 시작하고, 직접 설치할 경우 miniforge3의 디렉토리는 홈에서 시작합니다.
+4. brew로 설치할 경우 miniforge의 디렉토리는 `homebrew`에서 시작하고, 직접 설치할 경우 miniforge3의 디렉토리는 `홈`에서 시작합니다.
 <img src="https://user-images.githubusercontent.com/97590480/163105092-d59159d0-eaf9-4360-9201-4b832dc2972a.png">
 
-5. 만약 miniforge를 brew와 직접설치 두번 했을 경우 위의 이미지처럼 제가 원하는 경로에 가상환경이 설치되지 않을 경우가 발생하므로 miniforge는 하나만 깔아서 관리하기를 권장드립니다.
+5. 만약 miniforge를 brew와 직접설치 두번 했을 경우 위의 이미지처럼 제가 __원하는 경로에 가상환경이 설치되지 않을 경우가__ 발생하므로 miniforge는 하나만 깔아서 관리하기를 권장드립니다.
 
 > 설치 과정이 어렵다면 `https://velog.io/@heiswicked/M1-Lets-install-tensorflow-part01-공사중`로 들어가시면 더 상세히 설명이 되어 있습니다.
 
