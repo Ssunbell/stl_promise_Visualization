@@ -38,6 +38,7 @@
 1. 여기서 크게 `anaconda`가 깔려있는 경우와 그렇지 않은 경우로 나뉩니다.
 2. 아나콘다가 깔려있지 않은 경우에는 충돌이 일어나지 않으므로 그대로 진행해주시면 됩니다.
 3. 반면에, 아나콘다와 miniforge가 동시에 설치되어 있는 경우에는 아나콘다를 삭제해주셔야 충돌이 일어나지 않습니다.
+###### 아나콘다가 설치되어 있지 않다면 5번으로 내려가주시기 바랍니다.
 
 ##### 2. 아나콘다가 설치되어 있는 경우
 1. 다음 명령어를 터미널에 입력해줍니다.
@@ -48,10 +49,15 @@ sudo rm -rf ~/.condarc ~/.conda ~/.continum
 sudo rm -rf ~/opt/anaconda3
 ```
 2. shell에 저장된 경로를 삭제해줘야 합니다. `<<initalized~~>>` 밑으로 전부 삭제해주시기 바랍니다.
+```
 vim ~/.bash_profile
 vim ~/.zshrc
+```
 
-##### 3. miniforge 설치
+##### 3. Xcode 설치
+- 앱 스토어에 가셔서 Xcode를 검색하여 설치해주시면 됩니다.
+
+##### 4. miniforge 설치
 1. miniforge가 설치되어 있지 않은 경우에 두가지 경우로 설치할 수 있습니다.
 2. `homebrew`를 이용하여 설치하는 방법은 터미널에 `brew install miniforge`을 입력하여 실행해주시면 됩니다.
 <img src="https://user-images.githubusercontent.com/97590480/163104923-8220a589-0eff-4c76-8724-12755ba8ce80.png">
@@ -64,6 +70,6 @@ vim ~/.zshrc
 
 > 설치 과정이 어렵다면 `https://velog.io/@heiswicked/M1-Lets-install-tensorflow-part01-공사중`로 들어가시면 더 상세히 설명이 되어 있습니다.
 
-##### 4. 가상환경 설치
+##### 5. 가상환경 설치
 1. 마지막으로 `virtualenvironment_m1`을 실행시켜주시면 miniforge에 `semi_proj` 가상환경을 설치하여 라이브러리를 설치합니다.
 > gensim wordcloud konlpy 라이브러리는 conda로 설치하지 않고 pip으로 설치됩니다. 따라서 해당 라이브러리가 제대로 설치되지 않을경우 따로 설치해주시기 바랍니다.
