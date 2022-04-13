@@ -1,5 +1,6 @@
 #!/bin/bash
- 
+
+cd ~/miniforge3
 conda create -n semi_proj python=3.9
 source activate semi_proj
 conda install -c conda-forge numpy pandas scikit-learn statsmodels scipy seaborn matplotlib requests lxml beautifulsoup4 graphviz jupyter streamlit folium 
