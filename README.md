@@ -1,6 +1,7 @@
 # dacon 제 20대 대선 후보 정책•공약 시각화 경진대회
 - 해당 Repository는 __제 20대 대선 후보 정책•공약 시각화 경진대회__ 제출 자료입니다.
 - http://share.streamlit.io/trailblazer-yoo/streamlit_promise/promise.py 로 들어가시면 해당 자료를 streamlit을 통해 확인하실 수 있습니다.
+- __대회 결과 2등을 수상하였습니다.__😁
 
 ## 사용 방법
 <img width = "70%" src="https://user-images.githubusercontent.com/97590480/163096295-2a30e113-9171-4d68-9e32-94c8ee5df191.png">
